@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="..\jjquery.js" charset="UTF-8"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Footer</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="content">
+            <div class="icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+            <h1>become a <span>web designer</span></h1>
+            <p>Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications (Web apps), electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.</p>
+            <a href="#"><button>Let's get strated</button></a>
+        </div>
+        <div class="image">
+            <img src="web.jpg" alt="">
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $('.menu .fa-bars').click(function(){
+                &(this).toggleClass('far fa-times')
+                $('nav').toggleClass('toggle')
+            })
+        })
+    </script>
+</body>
+</html>
